@@ -16,5 +16,6 @@ accountCity="Lahore"
 /*
 Prefer not to use var because of an issue of block scope and functional scope.
 */
+let accountState;
 
-console.table([accountId, accountEmail, accountPassword, accountCity]);
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
