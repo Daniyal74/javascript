@@ -13,4 +13,8 @@
 // object
 
 console.log(typeof "Daniyal")
+console.log(typeof 23)
+console.log(typeof null) //type is object
+console.log(typeof undefined) //type is undefined
+
 
