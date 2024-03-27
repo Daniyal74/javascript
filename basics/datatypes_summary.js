@@ -34,8 +34,8 @@ const bigNumber=3456789234556123445n
 // console.log(typeof bigNumber)
 
 const heroes= ["ironman", "spiderman", "hulk"]
-// console.log(heroes)
-// console.log(typeof heroes)
+console.log(heroes)
+console.log(typeof heroes)
 
 let myObject = {
     name:"Daniyal",
@@ -44,4 +44,17 @@ let myObject = {
 }
 console.log(myObject)
 console.log(typeof myObject)
+
+// Function
+
+const myFunction=function(){
+    console.log("Hello, Syed Daniyal Shah")
+}
+
+// type of null is object.
+console.log(typeof myFunction)
+
+// typeof arrays, object are object and the typeof function is function object.
+
+
 
