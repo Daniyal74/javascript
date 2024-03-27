@@ -56,5 +56,39 @@ console.log(typeof myFunction)
 
 // typeof arrays, object are object and the typeof function is function object.
 
+// ******************************* Memory ************************************
+
+// There are two types of memory "Stack memory" and "Heap memory"
+// stack memeory is always used for Primitive datatypes.
+// heap memory is used for Non-Primitive datatypes.
+/* when "stack memory" is used then copy of declared variable is given as output and the changes
+can be made into the copy not the original declared value */
+
+/* when heap memory is used then the refrence of original value is given and the changes made into the original
+value */
+
+let myYoutubeName="Engr Syed Daniyal Shah"
+
+let anotherName=myYoutubeName;
+anotherName="Chai aur Code";
+
+/* stack memory always provides the copy of the declared value and changes are made into the
+copy not in a original value */
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne={
+    email:"daniyalsyed074@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email="syeddaniyal@yahoo.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
