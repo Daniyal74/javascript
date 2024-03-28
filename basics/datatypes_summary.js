@@ -78,6 +78,8 @@ copy not in a original value */
 console.log(myYoutubeName);
 console.log(anotherName);
 
+// Heap memory gives the reference of value and changes are made into the original value. 
+
 let userOne={
     email:"daniyalsyed074@gmail.com",
     upi:"user@ybl"
