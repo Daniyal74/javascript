@@ -28,13 +28,34 @@ const gameName = new String('Super Mario') // New way of declaring a string.
 
 // console.log(gameName.indexOf('M'));
 
-const newString = gameName.substring(0,5)
+const newString = gameName.substring(0,5) /* we don't provide negative value because it will
+always start with 0 */
 
-console.log(newString);
 
-console.log(gameName);
-const anotherString = gameName.slice(1, 6)
-console.log(anotherString);
+// console.log(newString);
+
+// console.log(gameName);
+const anotherString = gameName.slice(1, 7)
+// console.log(anotherString);
+
+const moreString = gameName.slice(-1,-5)
+// console.log(moreString);
+
+const newStringOne = "    Syed Daniyal Shah     "
+// console.log(newStringOne);
+// console.log(newStringOne.trim());
+// console.log(newStringOne.trimStart());
+// console.log(newStringOne.trimEnd());
+
+const url = "https://daniyal.com/daniyal%20shah"
+console.log(url.replace("%20", "-"));
+console.log(url.includes("shah"));
+console.log(url.includes("syed"));
+
+
+console.log(gameName.split(" "));
+
+
 
 
 
