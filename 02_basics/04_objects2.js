@@ -30,9 +30,38 @@ const regularUser = {
 
 const obj1 ={1:"s",2:"e",3:"l"}
 const obj2 = {4:"r", 5:"t", 6:"i"}
+const obj4 = {7:"r", 8:"t", 9:"i"}
 
-const obj3 = Object.assign(obj1,obj2)
-console.log(obj3);
+const obj3 = Object.assign({}, obj1,obj2,obj4)  /* we will take empty {} because there are 
+sometimes more objects to be merged */
+
+const obj5 = {...obj1,...obj2,...obj4}
+
+// console.log(obj5);
+// console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser));  // returns an array of keys.
+
+// format = Object.keys(Objectname)
+
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("state"));  /* ".hasownproperty()" can be used to
+check whether an object has such property or not */
+
+console.log(tinderUser.hasOwnProperty("country"));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
