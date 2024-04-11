@@ -26,7 +26,14 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.username.middlename);
+// console.log(regularUser.fullname.username.middlename);
+
+const obj1 ={1:"s",2:"e",3:"l"}
+const obj2 = {4:"r", 5:"t", 6:"i"}
+
+const obj3 = Object.assign(obj1,obj2)
+console.log(obj3);
+
 
 
 
