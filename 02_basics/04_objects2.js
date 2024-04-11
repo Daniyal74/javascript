@@ -47,10 +47,21 @@ const obj5 = {...obj1,...obj2,...obj4}
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("state"));  /* ".hasownproperty()" can be used to
-check whether an object has such property or not */
+// console.log(tinderUser.hasOwnProperty("state"));  /* ".hasownproperty()" can be used to check whether an object has such property or not */
 
-console.log(tinderUser.hasOwnProperty("country"));
+// console.log(tinderUser.hasOwnProperty("country"));
+
+const course={
+    coursename: "Physics",
+    instructorName: "Daniyal",
+    location: "Pakistan",
+}
+
+// console.log(course.instructorName);
+
+// Object destructuring
+const {instructorName:instructor}=course
+console.log(instructor);
 
 
 
