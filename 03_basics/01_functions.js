@@ -66,9 +66,35 @@ function returnThirdValue(getArray){
     return getArray[2]
 }
 
-console.log(returnThirdValue(myArray));
+// console.log(returnThirdValue(myArray));
 
-console.log(`Third value of an array is ${returnThirdValue([300,200,600,700])}`);
+// console.log(`Third value of an array is ${returnThirdValue([300,200,600,700])}`);
 
+function tellFortune(partner, geolocation, jobtitle, numkids){
+    result = 'You will be a ' + jobtitle + ' in ' + geolocation + ', and married to ' + partner + ' with '+numkids+' kids.'
+    console.log(result);
+}
 
+// tellFortune("Susan", "Amazon", "Security Analyst")
+
+// function 02
+
+function calculateDodAge(age){
+    result = 7*age
+    console.log(`Your doggie is ${result} years old in dog's years`);
+}
+
+// calculateDodAge(3)
+// calculateDodAge(5)
+// calculateDodAge(2)
+
+// Function 03
+
+function calculateSupply(age,amount_per_day){
+    personAge = age*365
+    consumedAmount = amount_per_day*personAge
+    console.log(`You will need ${consumedAmount}kg to last you until the ripe old age of ${age} years.`);
+}
+
+calculateSupply(10, 2)
 
