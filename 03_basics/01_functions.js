@@ -29,5 +29,46 @@ function logInUserMessage(username){
     return `${username}, Just Logged In....`
 }
 
-console.log(logInUserMessage());
+// console.log(logInUserMessage());
+
+// in functions "..." shows rest operator which actually place all passed arguments in a array.
+
+/* if we pass more than two argument when calling a function then the first value goes to val1,
+second value goes to val2 and the remaining all value will go into an array because of rest
+operator */
+
+function calculateCartPrice(val1, val2,...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(1,4,5,6));
+
+const teacherProfile={
+    name: "Syed Daniyal Shah",
+    subject: "Artificial Intelligence",
+    experience: "7 Years",
+}
+
+function profile(anyobject){
+    console.log(`Teacher's name is ${anyobject.name} and has experience of ${anyobject.experience} of teaching ${anyobject.subject}.`);
+}
+
+// profile(teacherProfile)
+// profile({
+//     name: "Shafqat",
+//     subject:"Computer Science",
+//     experience: "14 Years"
+// })
+
+const myArray=[200,500,400,600]
+
+function returnThirdValue(getArray){
+    return getArray[2]
+}
+
+console.log(returnThirdValue(myArray));
+
+console.log(`Third value of an array is ${returnThirdValue([300,200,600,700])}`);
+
+
 
