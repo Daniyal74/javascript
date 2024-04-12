@@ -96,5 +96,22 @@ function calculateSupply(age,amount_per_day){
     console.log(`You will need ${consumedAmount}kg to last you until the ripe old age of ${age} years.`);
 }
 
-calculateSupply(10, 2)
+// calculateSupply(10, 2)
 
+// function 04
+
+function calcGeometry(radius){
+    circumference = 2* Math.PI * (radius)
+    console.log(`The circumference is ${circumference} meters.`);
+    area = Math.PI * (radius * radius)
+    console.log(`The area is ${area} square meters.`);
+    return
+}
+
+// function calcArea(radius){
+//     area = Math.PI * (radius * radius)
+//     console.log(`The area is ${area} square meters.`);
+//     return
+// }
+
+calcGeometry(5)
