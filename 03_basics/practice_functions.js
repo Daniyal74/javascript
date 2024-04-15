@@ -132,7 +132,7 @@ function isPrime(n, divisor = 2) {
     return isPrime(n, divisor + 1);
 }
 
-console.log(test_prime(37));
+console.log(isPrime(37));
 
 
 
