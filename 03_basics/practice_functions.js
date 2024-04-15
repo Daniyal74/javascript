@@ -98,6 +98,7 @@ console.log(uppercase("the quick brown fox jumps over a lazy dog"));
 
 // function example 09
 
+/*
 function find_longest_word(str){
     const array2=str.match(/\w[a-z]{0,}/gi)
     const result=array2[0]
@@ -109,11 +110,29 @@ function find_longest_word(str){
     // return result
 }
 
+*/
+
 // console.log(find_longest_word("Web Dev tutorials"));
 
 // example 10
 
+function isPrime(n, divisor = 2) {
+    if (n < 2) {
+        return false;
+    }
+    if (divisor === 2 && n % 2 === 0) {
+        return false;
+    }
+    if (divisor > Math.sqrt(n)) {
+        return true;
+    }
+    if (n % divisor === 0) {
+        return false;
+    }
+    return isPrime(n, divisor + 1);
+}
 
+console.log(test_prime(37));
 
 
 
