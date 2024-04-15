@@ -40,7 +40,86 @@ function checking_a_palindrome(word){
     return
 }
 
-checking_a_palindrome("madam")
-checking_a_palindrome("sad")
+// checking_a_palindrome("madam")
+// checking_a_palindrome("sad")
+
+// Function Example 06
+
+/* for (initialization; condition; afterthought)
+   statement */
+
+/*
+function substring(str1){
+    const array1=[]
+    for (x=0, y=1; x<str1.length; x++,y++){
+        array1[x]=str1.substring(x,y)
+    }
+    const combination=[]
+    const temp=""
+    const slent=Math.pow(2,array1.length)
+    for (i=0, i<slent; i++){
+        temp=""
+        for (j=0; j<array1.length; j++){
+            if(i & Math.pow(2,j)){
+                temp += array1[j]
+            }
+        if (temp !== ""){
+            combination.push(temp)
+        }
+        }
+    }
+    console.log(combination.join("\n"));
+}
+*/
+// substring("dog")
+
+// function example 07
+
+function alphbetical_order(word){
+    return word.split("").sort().join("")
+}
+
+// console.log(alphbetical_order("webmaster"));
+
+// function example 08
+
+/*
+function uppercase(word){
+    const array01=word.split("")
+    const newArray=[]
+    for(var x=0;x<array01.length;x++){
+        newArray.push(array01[x].charAt(0).toUpperCase() + array01[x].slice(1))
+    }
+    return newArray.join("")
+}
+
+console.log(uppercase("the quick brown fox jumps over a lazy dog"));
+*/
+
+// function example 09
+
+function find_longest_word(str){
+    const array2=str.match(/\w[a-z]{0,}/gi)
+    const result=array2[0]
+    for (i=0; i<array2.length; i++){
+        if (result.length<array2[i].length){
+            return array2[i]
+        }
+    }
+    // return result
+}
+
+// console.log(find_longest_word("Web Dev tutorials"));
+
+// example 10
+
+
+
+
+
+
+
+
+
 
 
