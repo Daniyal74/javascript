@@ -29,7 +29,7 @@ function one(){
 
     function two(){
         const website="daniyalsyed074@gmail.com"
-        console.log(username);
+        // console.log(username);
     }
     // console.log(website);  // this is a part of function two block and can't be call out of block.
 
@@ -46,14 +46,28 @@ if(true){
 
     if(username=="Daniyal"){
         const website = "Youtube"
-        console.log(username + website) // username is called because it has global scope.
+        // console.log(username + website) // username is called because it has global scope.
     }
     // console.log(website) // can't be called out of block scope.
 }
 
 // console.log(username) // can't be called out of block scope.
 
+// ****************************** Interesting *************************************
 
+function addone(num){
+    // console.log(num+1);
+    return
+}
+
+addone(7)
+
+// VARIABLES are very powerful in JS because they can store functions, objects and anything. 
+const addTwo = function (num) {
+    return num+2
+}
+
+addTwo(5)
 
 
 
