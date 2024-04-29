@@ -52,15 +52,20 @@ console.log(addNum(6,6));
 // means when you write a function then immediate calling the function.
 
 (function chai(){
+    // function chai is a NAMED IIFE.
     console.log("DB Connected.");
 })(); // IIFE doesn't know when to stop so, for this we use semicolon = ";"
 
 /* IIFE = (defination)() ,Sometimes problem is caused by the pollution of global scope so, 
 inorder to remove the global scope pollution and variables we use IIFE. */
 
+
+// below is an example of UNNAMED IIFE.
 ((name) => {
     console.log(`DB Connected Two ${name}.`);
 })("Daniyal")
+
+
 
 
 
