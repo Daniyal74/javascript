@@ -3,6 +3,7 @@
     "@types/node": "^20.12.8"
   },
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "prompt-sync-plus": "^1.0.2"
   }
 }

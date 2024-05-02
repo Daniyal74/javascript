@@ -9,6 +9,9 @@ if (conditions){
 "if" statement runs only, when the condition is true otherwise the if statement doesn't work.
 */
 
+// import psp from "prompt-sync-plus";
+
+// const prompt = psp({ sigint: true });
 var prompt = require("prompt_sync")()
 let temperature = prompt("Enter your temperature: ")
 let temp =+ temperature;
