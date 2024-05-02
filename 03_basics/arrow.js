@@ -161,5 +161,5 @@ result2 <- 12  */
                                     |________________________|
 
 LIFO (Last In First Out) technique is being used for execution the last function will executes
-first and then leave the stack.
+first and then leave the stack. */
 
