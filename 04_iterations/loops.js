@@ -72,6 +72,7 @@ while (i <= 10) {
 }
 */
 
+/*
 let myArray = ["Antman", "Ironman", "Hulk"]
 
 let arr = 0
@@ -79,6 +80,15 @@ while (arr < myArray.length) {
     console.log(`Value is ${myArray[arr]}.`);
     arr++
 }
+*/
+
+let score = 12
+do {
+    console.log(`Score is ${score}.`);
+    score++
+} while (score <= 10);
+
+
 
 
 
