@@ -59,8 +59,33 @@ for (const key in myObject) {
 const programming = ["Javascript", "C++", "Python", "Ruby", "Swift"]
 
 for (const key in programming) {
-    console.log(programming[key]);
+    // console.log(programming[key]);
 }
+
+// we don't apply "for in" loop on maps because maps are not iterative.
+
+/******************** For each loop **************************************/
+
+const coding = ["JS", "Ruby", "Swift", "cpp", "Java", "Python"]
+
+// call back function doesn't have any specific name.
+
+coding.forEach(function (item){
+    // console.log(item);
+})
+
+coding.forEach((item)=>{
+    // console.log(item);
+})
+
+function printMe(item) {
+    console.log(item);
+}
+
+coding.forEach(printMe)
+
+
+
 
 
 
