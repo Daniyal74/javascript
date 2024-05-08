@@ -82,11 +82,26 @@ function printMe(item) {
     console.log(item);
 }
 
-coding.forEach(printMe)
+// coding.forEach(printMe)
 
+const myCoding = [
+    {
+        languageName: "Javascript",
+        languageFileName: "Js"
+    },
+    {
+        languageName: "Ruby",
+        languageFileName: "R"
+    },
+    {
+        languageName: "Python",
+        languageFileName: "Py"
+    },
+]
 
-
-
+myCoding.forEach((item)=>{
+    console.log(item.languageFileName);
+})
 
 
 
