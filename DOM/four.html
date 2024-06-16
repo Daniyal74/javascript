@@ -25,7 +25,8 @@
     function addOptilanguage(langName) {
         const li = document.createElement("li")
         li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').appendChild(li) /* Reference is not present that's why
+        we have to select class then append child in it. */
     }
     addOptilanguage("golang")
     addOptilanguage('CoBol')
@@ -39,7 +40,13 @@
     const newli = document.createElement("li")
     newli.textContent = "Jython"
     secondLang.replaceWith(newli)
+
+    const firstLang = document.querySelector("li:nth-child(1)")
+    const newli = document.createElement("li")
+    newli.textContent = "SQL"
+    firstLang.replaceWith(newli)
     
+
 
 
 
