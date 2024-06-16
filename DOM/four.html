@@ -25,10 +25,24 @@
     function addOptilanguage(langName) {
         const li = document.createElement("li")
         li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild('li')
+        document.querySelector('.language').appendChild(li)
     }
-    addOptilanguage("CoBol")
+    addOptilanguage("golang")
+    addOptilanguage('CoBol')
+    // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "MoJo" (This is not an optimized approach because it does traversing.)
+
+    // Optimized approach
+
+    const newli = document.createElement("li")
+    newli.textContent = "Jython"
+    secondLang.replaceWith(newli)
     
+
+
+
 
 
 
