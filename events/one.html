@@ -44,6 +44,10 @@ as propagation ability.-->
         console.log("owl clicked.");
         e.stopPropagation(); // event will not bubble or bubbling stops.
     }, false)
+    document.getElementById('google').addEventListener('click', (e)=>{
+        e.preventDefault();
+        console.log("google clicked.");
+    }, false)
     
 
     // Event Propagation (Event Bubbling (false) and Event capturing(true))
