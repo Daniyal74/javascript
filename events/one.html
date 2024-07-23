@@ -36,10 +36,28 @@ as propagation ability.-->
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
     
-    document.getElementById('owl').addEventListener('click', (e)=>{
-        console.log(e);
+    document.getElementById('images').addEventListener('click', (e)=>{
+        console.log("clicked inside the ul.");
     }, false)
 
+    document.getElementById('owl').addEventListener('click', (e)=>{
+        console.log("owl clicked.");
+        e.stopPropagation(); // event will not bubble or bubbling stops.
+    }, false)
+    
+
+
     // Event Propagation (Event Bubbling (false) and Event capturing(true))
+    /* when we clicked owl so, owl is present inside the ul. When we clicked on owl, first
+    "owl clicked" printed then "clicked inside the ul" printed. This is called EVENT BUBBLING
+    because bubble alway moves upward. This can be done when third parameter is "false".*/
+
+    /* when we use "true" as a third parameter then upon clicking on owl the first thing printed
+    is "clicked inside the ul" and after that the "owl clicked" printed. This type of event
+    propagation is called EVENT CAPTURING in which we move from upward to downward.*/
+
+
+
+
 </script>
 </html>
